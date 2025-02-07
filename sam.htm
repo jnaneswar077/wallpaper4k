@@ -1,0 +1,98 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    .about-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10%;
+        background: #f9f9f9;
+    }
+    .about-content {
+        max-width: 50%;
+    }
+    .about-content h2 {
+        color: #222;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .about-content p {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.6;
+    }
+    .about-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .stat-box {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        min-width: 150px;
+    }
+    .stat-box h3 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    .stat-box p {
+        font-size: 1rem;
+        color: #666;
+    }
+    .about-image {
+        max-width: 50%;
+    }
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    @media (max-width: 1024px) {
+        .about-section {
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-content, .about-image {
+            max-width: 100%;
+        }
+        .about-stats {
+            justify-content: center;
+        }
+    }
+    </style>
+    
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Our Mission & Impact</h2>
+            <p>Democratizing access to high-quality education with top educators and interactive learning.</p>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <h3>50M+</h3>
+                    <p>Active Learners</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1000+</h3>
+                    <p>Top Educators</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1B+</h3>
+                    <p>Minutes Watched</p>
+                </div>
+                <div class="stat-box">
+                    <h3>2000+</h3>
+                    <p>Daily Live Classes</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="pic2.jpg" alt="About Image">
+        </div>
+    </section>
